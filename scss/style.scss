@@ -1,0 +1,146 @@
+// Required
+//@import "node_modules/bootstrap/scss/functions";
+//@import "node_modules/bootstrap/scss/variables";
+//@import "node_modules/bootstrap/scss/mixins";
+
+// Optional
+//@import "node_modules/bootstrap/scss/grid";
+
+$default-font: Raleway,Arial,sans-serif;
+$default-font-size: 1em;
+$spritePath: "../images/sprite/Sprite.png";
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// General
+
+* {
+    font-family: $default-font;
+    font-size: $default-font-size;
+  }
+
+h1 {
+    font-size: $default-font-size *1.5;
+    margin-bottom: 0;
+}
+
+.responsive-text {
+    display: block;
+}
+
+// Header - logo
+
+#header__logo {
+    width: 52px;
+    height: 52px;
+    background: url($spritePath);
+    background-position: 0 -64;
+    background-repeat: no-repeat;
+    zoom: 1.5;
+    margin: 1em 1em 1em 2em;
+}
+
+// Header - menu
+
+#header__menu {
+    text-align: right;
+    padding: 2em;
+}
+
+#header__btn-menu--cross {
+    display: none;
+}
+
+#header__btn-menu {
+    background-color: #E2261D;
+    color: white;
+    width: 1.8em;
+    height: 1.8em;
+    font-size: 1.25em;
+    border: none;
+    outline: none;
+}
+
+#header__menu-list {
+    display: none;
+    padding: 0;
+}
+
+#header__menu-list li {
+    display: block;
+    padding: 0.5em;
+    background-color: #f8f9fa;
+}
+
+#header__menu-list li:hover {
+    background-color: #BFBFBF;
+    color: #FFF;
+}
+
+// Header - navbar
+
+#navbar__logo-text {
+    width: 148px;
+    height: 21px;
+    background: url($spritePath);
+    background-position: -58 -80;
+    background-repeat: no-repeat;  
+    zoom: 0.9;
+    margin-right: 2em;
+}
+
+#navbar {
+    align-items: initial;
+    font-size: $default-font-size *0.8;
+    padding: 1em 1em 1em 1em;
+}
+
+%navbar__nav-items {
+    margin: 0 0.75em 0 0;
+}
+
+#navbar__nav-item--active {
+    background-color: #BFBFBF;
+    @extend %navbar__nav-items;
+}
+
+#navbar__nav-item--inactive {
+    background-color: white;
+    @extend %navbar__nav-items;
+}
+
+%navbar__nav-links {
+    padding: 0 0.5em 0 0.5em;
+}
+
+#navbar__nav-link--active {
+    color: white;
+    @extend %navbar__nav-links
+}
+
+#navbar__nav-link--inactive {
+    color: #BFBFBF;
+    @extend %navbar__nav-links
+}
+
+
+
+.section__title {
+    padding: 1.5em 1em 0 1em;
+&--fat {
+    font-weight: 900;
+    }
+}
+
+.section__content {
+    padding: 1em;
+}
+
+// Footer
+
+footer {
+    background-color: #BFBFBF;
+    color: white;
+    font-size: $default-font-size *0.6;
+    padding: 0.5em 1em 0.5em 1em;
+}

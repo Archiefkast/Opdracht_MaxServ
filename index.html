@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="icon" type="image/png" href="images/icons/favicon-128.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $( document ).ready(function() {
+
+                $('#header__btn-menu').click(function() {
+                    $("#header__menu-list").toggle(200);
+                    $("#header__btn-menu--hamburger").toggle(200);
+                    $("#header__btn-menu--cross").toggle(200);
+                });
+
+            });
+        </script>
+        <title>MaxServ - opdracht</title>
+    </head>
+    <body>
+        <div class="container bg-white">
+            <header class="row bg-white">
+                <div id="header__logo">
+                </div>          
+                <div class="col" id="header__menu">
+                    <button id="header__btn-menu"><span id="header__btn-menu--hamburger">&#9776;</span><span id="header__btn-menu--cross">&#10006;</span></button>
+                    <ul id="header__menu-list">
+                        <li>Home</li>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                    <ul>
+                </div>
+            </header>
+            <nav class="navbar navbar-expand-sm bg-light" id="navbar">
+                <div class="nav-brand" id="navbar__logo-text">
+                </div>
+                <ul class="navbar-nav" id="navbar__nav">
+                    <li class="nav-item" id="navbar__nav-item--active">
+                        <a class="nav-link" id="navbar__nav-link--active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item" id="navbar__nav-item--inactive">
+                        <a class="nav-link" id="navbar__nav-link--inactive" href="#">dolor sit amet</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="section__title bg-light">
+                <h1>Fusce feugiat accumsan <span class="section__title--fat">id sapien varius</span></h1>
+            </section>
+            <section class="section__content bg-light">
+                <span class="responsive-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia elementum dignissim. Ut pellentesque posuere felis, in</span>
+                <span class="responsive-text">dondimentum nisi lobortis eget. Pellentesque malesuada pretium erat eget blandit. Aliquam et lectus et urna placerat</span>
+                <span class="responsive-text">volutpat eget vitae lectus.</span>
+            </section>
+            <footer>
+                © 2018 - MaxServ is niet aansprakelijk voor (gevolg)schade die voortkomt uit het gebruik van deze site, dan wel uit fouten of ontbrekende functionaliteiten op deze site.
+            </footer>
+        </div>
+    </body>
+</html>

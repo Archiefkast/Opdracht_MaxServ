@@ -1,0 +1,28 @@
+{
+  "name": "oefenproject",
+  "version": "1.0.0",
+  "description": "MaxServ - test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Archiefkast/Opdracht_MaxServ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Archiefkast/Opdracht_MaxServ/issues"
+  },
+  "homepage": "https://github.com/Archiefkast/Opdracht_MaxServ#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper": "^1.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
