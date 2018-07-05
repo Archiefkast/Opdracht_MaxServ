@@ -21,14 +21,24 @@ $spritePath: "../images/sprite/Sprite.png";
 
 h1 {
     font-size: $default-font-size *1.5;
-    margin-bottom: 0;
 }
 
 .responsive-text {
     display: block;
 }
 
-// Header - logo
+// Container
+
+.container {
+    padding: 0;
+}
+
+// Header
+
+header {
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 #header__logo {
     width: 52px;
@@ -37,14 +47,12 @@ h1 {
     background-position: 0 -64;
     background-repeat: no-repeat;
     zoom: 1.5;
-    margin: 1em 1em 1em 2em;
+    margin: 1em 1em 1em 1.5em;
 }
-
-// Header - menu
 
 #header__menu {
     text-align: right;
-    padding: 2em;
+    padding: 1em 0 0 0;
 }
 
 #header__btn-menu--cross {
@@ -77,7 +85,11 @@ h1 {
     color: #FFF;
 }
 
-// Header - navbar
+#navbar {
+    align-items: initial;
+    font-size: $default-font-size *0.8;
+    padding: 1em 2.5em 1em 2.5em;
+}
 
 #navbar__logo-text {
     width: 148px;
@@ -87,12 +99,6 @@ h1 {
     background-repeat: no-repeat;  
     zoom: 0.9;
     margin-right: 2em;
-}
-
-#navbar {
-    align-items: initial;
-    font-size: $default-font-size *0.8;
-    padding: 1em 1em 1em 1em;
 }
 
 %navbar__nav-items {
@@ -123,17 +129,61 @@ h1 {
     @extend %navbar__nav-links
 }
 
-
+section {
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 .section__title {
-    padding: 1.5em 1em 0 1em;
-&--fat {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    &--fat {
     font-weight: 900;
     }
 }
 
-.section__content {
+// Image gallery
+
+.section__img-gallery {
+    padding-top: 1em;   
+    padding-bottom: 1em; 
+    width: 100%;
+    height: 20em;
+}
+
+.section__img-gallery img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.section__img-gallery-type1 {
+}
+
+.section__img-gallery-type2 {
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+    background: black;
+    opacity: 0.7;
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    left: 2em;
+    top: 3em;
     padding: 1em;
+    font-size: $default-font-size *1.2;
+}
+
+.section__img-gallery-type3 {
+}
+
+.section__img-gallery-type4 {
+}
+
+.font--fat {
+    font-weight: 900;
 }
 
 // Footer
@@ -142,5 +192,5 @@ footer {
     background-color: #BFBFBF;
     color: white;
     font-size: $default-font-size *0.6;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em 2em 0.5em 2em;
 }
