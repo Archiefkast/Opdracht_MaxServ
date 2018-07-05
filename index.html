@@ -1,91 +1,115 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="css/style.css"> 
-        <link rel="icon" type="image/png" href="images/icons/favicon-128.png">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $( document ).ready(function() {
 
-                $('#header__btn-menu').click(function() {
-                    $("#header__menu-list").toggle(200);
-                    $("#header__btn-menu--hamburger").toggle(200);
-                    $("#header__btn-menu--cross").toggle(200);
-                });
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/favicon-128.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#header__btn-menu').click(function () {
+                $("#header__menu-list").toggle(200);
+                $("#header__btn-menu--hamburger").toggle(200);
+                $("#header__btn-menu--cross").toggle(200);
             });
-        </script>
-        <title>MaxServ - opdracht</title>
-    </head>
-    <body>
-        <div class="container bg-white">
-            <header class="bg-white">
-                <div class="row">
-                    <div id="header__logo">
-                    </div>          
-                    <div class="col" id="header__menu">
-                        <button id="header__btn-menu"><span id="header__btn-menu--hamburger">&#9776;</span><span id="header__btn-menu--cross">&#10006;</span></button>
-                        <ul id="header__menu-list">
-                            <li>Home</li>
-                            <li>Link 1</li>
-                            <li>Link 2</li>
-                        <ul>
-                    </div>
+
+        });
+    </script>
+    <title>MaxServ - opdracht</title>
+</head>
+
+<body>
+    <div class="container bg-white">
+        <header class="bg-white">
+            <div id="header__logo"></div>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">MaxServ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Keukens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </header>
-            <nav class="navbar navbar-expand-sm bg-light" id="navbar">
-                <div class="nav-brand" id="navbar__logo-text">
-                </div>
-                <ul class="navbar-nav" id="navbar__nav">
-                    <li class="nav-item" id="navbar__nav-item--active">
-                        <a class="nav-link" id="navbar__nav-link--active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item" id="navbar__nav-item--inactive">
-                        <a class="nav-link" id="navbar__nav-link--inactive" href="#">dolor sit amet</a>
-                    </li>
-                </ul>
             </nav>
-            <section class="section__title bg-light">
-                <h1>Fusce feugiat accumsan <span class="section__title--fat">id sapien varius</span></h1>
-            </section>
-            <section class="section__content bg-light">
-                <span class="responsive-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia elementum dignissim. Ut pellentesque posuere felis, in</span>
-                <span class="responsive-text">dondimentum nisi lobortis eget. Pellentesque malesuada pretium erat eget blandit. Aliquam et lectus et urna placerat</span>
-                <span class="responsive-text">volutpat eget vitae lectus.</span>
-            </section>
-            <section class="bg-light">
-                <div class="row">
-                    <div class="col">
-                        <div class="section__img-gallery">
-                            <img src="images/kitchens/kitchen_1.jpg">
-                            <div class="section__img-gallery-type1"></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="section__img-gallery">
-                            <img src="images/kitchens/kitchen_2.jpg">
-                            <div class="section__img-gallery-type2">litora torquent<br>per conubia<br><span class="font--fat">posuere<br>tincidunt</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">    
-                    <div class="col">
-                        <div class="section__img-gallery">
-                            <img src="images/kitchens/kitchen_3.jpg">
-                            <div class="section__img-gallery-type3"></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="section__img-gallery">
-                            <img src="images/kitchens/kitchen_4.jpg">
-                            <div class="section__img-gallery-type4"></div>
-                        </div>
+
+        </header>
+        <section class="section__title bg-light">
+            <h1>Fusce feugiat accumsan
+                <span class="section__title--fat">id sapien varius</span>
+            </h1>
+        </section>
+        <section class="section__content bg-light">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia elementum dignissim. Ut pellentesque posuere
+                felis, in</p>
+            <p>dondimentum nisi lobortis eget. Pellentesque malesuada pretium erat eget blandit. Aliquam et lectus et urna placerat</p>
+            <p>volutpat eget vitae lectus.</p>
+        </section>
+        <section class="bg-light">
+            <div class="row">
+                <div class="col-md-6 px-2 mt-3">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="https://picsum.photos/500/350?random&image=0" alt="Lights" style="width:100%">
+                        </a>
                     </div>
                 </div>
-            </section>
-            <footer>
-                © 2018 - MaxServ is niet aansprakelijk voor (gevolg)schade die voortkomt uit het gebruik van deze site, dan wel uit fouten of ontbrekende functionaliteiten op deze site.
-            </footer>
-        </div>
-    </body>
+                <div class="col-md-6 px-2 mt-3">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="https://picsum.photos/500/350?random&image=1" alt="Nature" style="width:100%">
+                            <div class="section__img-gallery-type2 d-none d-md-block">litora torquent
+                                <br>per conubia
+                                <br>
+                                <span class="font--fat">posuere
+                                    <br>tincidunt</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 px-2 mt-3">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="https://picsum.photos/500/350?random&image=2" alt="Fjords" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 px-2 mt-3">
+                    <div class="thumbnail">
+                        <a href="#">
+                            <img src="https://picsum.photos/500/350?random&image=3" alt="Fjords" style="width:100%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            © 2018 - MaxServ is niet aansprakelijk voor (gevolg)schade die voortkomt uit het gebruik van deze site, dan wel uit fouten
+            of ontbrekende functionaliteiten op deze site.
+        </footer>
+    </div>
+</body>
+
 </html>

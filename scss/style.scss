@@ -10,8 +10,6 @@ $default-font: Raleway,Arial,sans-serif;
 $default-font-size: 1em;
 $spritePath: "../images/sprite/Sprite.png";
 
-@import "node_modules/bootstrap/scss/bootstrap";
-
 // General
 
 * {
@@ -20,24 +18,13 @@ $spritePath: "../images/sprite/Sprite.png";
   }
 
 h1 {
-    font-size: $default-font-size *1.5;
-}
-
-.responsive-text {
-    display: block;
+    font-size: $default-font-size * 1.5;
 }
 
 // Container
 
 .container {
     padding: 0;
-}
-
-// Header
-
-header {
-    padding-left: 2em;
-    padding-right: 2em;
 }
 
 #header__logo {
@@ -50,88 +37,10 @@ header {
     margin: 1em 1em 1em 1.5em;
 }
 
-#header__menu {
-    text-align: right;
-    padding: 1em 0 0 0;
-}
-
-#header__btn-menu--cross {
-    display: none;
-}
-
-#header__btn-menu {
-    background-color: #E2261D;
-    color: white;
-    width: 1.8em;
-    height: 1.8em;
-    font-size: 1.25em;
-    border: none;
-    outline: none;
-}
-
-#header__menu-list {
-    display: none;
-    padding: 0;
-}
-
-#header__menu-list li {
-    display: block;
-    padding: 0.5em;
-    background-color: #f8f9fa;
-}
-
-#header__menu-list li:hover {
-    background-color: #BFBFBF;
-    color: #FFF;
-}
-
-#navbar {
-    align-items: initial;
-    font-size: $default-font-size *0.8;
-    padding: 1em 2.5em 1em 2.5em;
-}
-
-#navbar__logo-text {
-    width: 148px;
-    height: 21px;
-    background: url($spritePath);
-    background-position: -58 -80;
-    background-repeat: no-repeat;  
-    zoom: 0.9;
-    margin-right: 2em;
-}
-
-%navbar__nav-items {
-    margin: 0 0.75em 0 0;
-}
-
-#navbar__nav-item--active {
-    background-color: #BFBFBF;
-    @extend %navbar__nav-items;
-}
-
-#navbar__nav-item--inactive {
-    background-color: white;
-    @extend %navbar__nav-items;
-}
-
-%navbar__nav-links {
-    padding: 0 0.5em 0 0.5em;
-}
-
-#navbar__nav-link--active {
-    color: white;
-    @extend %navbar__nav-links
-}
-
-#navbar__nav-link--inactive {
-    color: #BFBFBF;
-    @extend %navbar__nav-links
-}
-
 section {
     padding-left: 2em;
     padding-right: 2em;
+    padding-bottom: 1em;    
 }
 
 .section__title {
@@ -144,31 +53,16 @@ section {
 
 // Image gallery
 
-.section__img-gallery {
-    padding-top: 1em;   
-    padding-bottom: 1em; 
-    width: 100%;
-    height: 20em;
-}
-
-.section__img-gallery img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: auto;
-}
-
 .section__img-gallery-type1 {
 }
 
 .section__img-gallery-type2 {
-    max-width: 100%;
-    max-height: 100%;
     color: white;
     background: black;
     opacity: 0.7;
     width: 10em;
-    height: 10em;
+    max-height: 10em;
+    overflow: hidden;
     position: absolute;
     left: 2em;
     top: 3em;
