@@ -24,6 +24,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+    <!-- Load custom JQuery -->
+    <script src="js/script.js"></script>
+
     <title>MaxServ - Opdracht</title>
 </head>
 
@@ -65,9 +68,18 @@
                 <br> volutpat eget vitae lectus.
             </p>
         </section>
+
+        <section class="bg-light">
+            <div id="filter">
+                <a href="#">Toon alle</a> |
+                <a href="#" rel="kitchens">Keukens</a> |
+                <a href="#" rel="ambiance">Sfeer</a> |
+            </div>
+        </section>
+
         <section class="bg-light gallery">
             <div class="row">
-                <div class="col-md-6 px-2 mt-3">
+                <div class="col-md-6 px-2 mt-3 kitchens">
                     <div class="thumbnail gallery__gallery-item--hover">
                         <a href="#">
                             <figure>
@@ -77,13 +89,13 @@
                                 <img src="images/gallery/price_tag.png">
                                 <div class="gallery__price-text">PRIJS:
                                 </div>
-                                <div class="gallery__price-value">9.250,-
+                                <div class="gallery__price-value">&euro; 9.250,-
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 px-2 mt-3">
+                <div class="col-md-6 px-2 mt-3 ambiance">
                     <div class="thumbnail gallery__gallery-item--hover">
                         <a href="#">
                             <figure>
@@ -99,7 +111,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 px-2 mt-3">
+                <div class="col-md-6 px-2 mt-3 kitchens">
                     <div class="thumbnail gallery__gallery-item--hover">
                         <a href="#">
                             <figure>
@@ -108,7 +120,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 px-2 mt-3">
+                <div class="col-md-6 px-2 mt-3 kitchens">
                     <div class="thumbnail gallery__gallery-item--hover">
                         <a href="#">
                             <figure>

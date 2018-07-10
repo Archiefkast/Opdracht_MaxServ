@@ -53,32 +53,30 @@ section {
   padding-top: 1.5em;
   padding-bottom: 1em; }
 
-.thumbnail {
-  overflow: hidden; }
-
 .gallery img {
   width: 100%; }
 
-.gallery__gallery-item--hover figure img {
-  transform: scale(1);
-  transition: .3s ease-in-out; }
-
-.gallery__gallery-item--hover figure:hover img {
-  transform: scale(1.1); }
+.gallery__gallery-item--hover figure {
+  overflow: hidden; }
+  .gallery__gallery-item--hover figure img {
+    transform: scale(1);
+    transition: .3s ease-in-out; }
+  .gallery__gallery-item--hover figure:hover img {
+    transform: scale(1.1); }
 
 .gallery__price-text {
   position: absolute;
   right: 12.5em;
   bottom: 6em;
-  transform: rotate(-6deg);
+  transform: rotate(-7deg);
   font-size: 0.6em;
   color: white; }
 
 .gallery__price-value {
   position: absolute;
-  right: 2em;
+  right: 1.2em;
   bottom: 1em;
-  transform: rotate(-6deg);
+  transform: rotate(-7deg);
   font-size: 1.8em;
   font-weight: 900;
   color: white; }
