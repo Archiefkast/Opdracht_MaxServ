@@ -1,7 +1,7 @@
 // SCSS variables
 
-$default-font: Raleway,Arial,sans-serif;
-$default-font-size: 1em;
+$defaultFont: Raleway,Arial,sans-serif;
+$defaultFontSize: 1em;
 $spritePath: "../images/sprite/Sprite.png";
 
 
@@ -9,12 +9,12 @@ $spritePath: "../images/sprite/Sprite.png";
 // General
 
 * {
-    font-family: $default-font;
-    font-size: $default-font-size;
+    font-family: $defaultFont;
+    font-size: $defaultFontSize;
 }
 
 h1 {
-    font-size: $default-font-size * 1.5;
+    font-size: $defaultFontSize * 1.5;
 }
 
 .font-weight--900 {
@@ -29,7 +29,7 @@ h1 {
     padding: 0;
 }
 
-#logo {
+#logo-main {
     width: 52px;
     height: 52px;
     margin: 1em 1em 1em 2.5em;
@@ -46,30 +46,31 @@ h1 {
 .navbar-brand {
     width: 148px;
     height: 21px;
-    margin-left: 1em;
-    margin-top: 0.5em;
+//    margin-left: 1em;
+//    margin-top: 0.5em;
     background: url("../images/sprite/Sprite.png");
     background-position: -58 -80;
     background-repeat: no-repeat;
     zoom: 0.9;
 }
 
-.nav-item {
-    margin: 0.5em 0 0 1em;
-}
+//.nav-item {
+//    margin: 0.5em 0 0 1em;
+//}
 
-.nav-link {
-    padding: 0 0.5em 0 0.5em!important;
-}
+//.nav-link {
+//    padding: 0 0.5em 0 0.5em!important;
+//}
 
-.navbar__nav-link--active {
+.navbar__nav-link {
+    &--active {
     background-color: #BFBFBF;
     color: white !important;
-}
-
-.navbar__nav-link--inactive {
+    }
+    &--inactive {
     background-color: white;
     color: #BFBFBF !important;
+    }
 }
 
 
@@ -82,19 +83,48 @@ section {
     padding-bottom: 1em;    
 }
 
+
+
+// Title
+
 .title {
     padding-top: 1.5em;
     padding-bottom: 1em;
 }
 
-// Image gallery
+
+
+// Gallery filter
+
+%activeFocus {
+    background-color: #BFBFBF;
+    color: white;        
+}
+
+#gallery__filter {
+
+    & a {
+        padding: 0.2em 1em 0.2em 1em;
+        background-color: white;
+        color: #BFBFBF;
+    }
+    & a:active {
+        @extend %activeFocus;
+    }
+    
+    & a:focus {
+        @extend %activeFocus;
+    }
+}
+
+
+// Gallery
 
 .gallery img {
     width: 100%;
 }
 
 .gallery__gallery-item--hover figure {
-
     overflow: hidden;
 
     & img {
@@ -109,19 +139,19 @@ section {
 
 .gallery__price-text {
     position: absolute;
-    right: 12.5em;
-    bottom: 6em;  
-    transform: rotate(-7deg);
-    font-size: $default-font-size * 0.6;
+    left: 1em;
+    top: 1.6em;  
+    transform: rotate(-5.3deg);
+    font-size: $defaultFontSize * 0.6;
     color: white;
 }
 
 .gallery__price-value {
     position: absolute;
-    right: 1.2em;
-    bottom: 1em;  
-    transform: rotate(-7deg);
-    font-size: $default-font-size * 1.8;
+    left: 0.4em;
+    top: 0.6em;  
+    transform: rotate(-5.3deg);
+    font-size: $defaultFontSize * 1.8;
     font-weight: 900;
     color: white;
 }
@@ -141,7 +171,7 @@ section {
     left: 1.5em;
     top: 1.75em;
     padding: 2em 1em 2em 1em;
-    font-size: $default-font-size *1.2;
+    font-size: $defaultFontSize *1.2;
     line-height: 1.25em;
     background: #4F4E4E;
     color: white;
@@ -154,8 +184,31 @@ section {
 // Footer
 
 footer {
-    font-size: $default-font-size *0.6;
-    padding: 1em 0.5em 0.5em 2em;
+    padding: 1em 2em 0.2em 2em;
     background-color: #BFBFBF;
-    color: white;    
+    color: white;
+    & a:link {
+        color: white;
+    } 
+    & hr {
+        margin: 0.5em -2em 0.5em -2em;
+        border-color: #4F4E4E;
+        opacity: 0.2
+    }
+}
+
+#logo-small {
+    width: 206px;
+    height: 52px;
+    margin-top: 0.5em;
+    background: url($spritePath);
+    background-position: 0 -64;
+    background-repeat: no-repeat;
+    zoom: 0.6;  
+}
+
+#disclaimer {
+    padding-top: 3em;
+    padding-bottom: 0;
+    font-size: $defaultFontSize *0.6;
 }

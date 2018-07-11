@@ -32,8 +32,9 @@
 
 <body>
     <div class="container bg-white">
+
         <header class="bg-white">
-            <div id="logo"></div>
+            <div id="logo-main"></div>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#"></a>
@@ -44,21 +45,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link navbar__nav-link--active" href="#">Home</a>
+                            <a class="nav-link py-1 navbar__nav-link--active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link navbar__nav-link--inactive" href="#">dolor sit amet</a>
+                            <a class="nav-link py-1 navbar__nav-link--inactive" href="#">dolor sit amet</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-
         </header>
+
         <section class="bg-light title">
             <h1>Fusce feugiat accumsan
                 <span class="font-weight--900">id sapien varius</span>
             </h1>
         </section>
+
         <section class="bg-light">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia elementum dignissim. Ut pellentesque posuere felis,
@@ -70,70 +72,93 @@
         </section>
 
         <section class="bg-light">
-            <div id="filter">
-                <a href="#">Toon alle</a> |
-                <a href="#" rel="kitchens">Keukens</a> |
-                <a href="#" rel="ambiance">Sfeer</a> |
+            <div class="d-flex flex-wrap justify-content-center" id="gallery__filter">
+                <div class="p-2">
+                    <a href="#">Toon alle</a>
+                </div>
+                <div class="p-2">
+                    <a href="#" rel="kitchens">Keukens</a>
+                </div>
+                <div class="p-2">
+                    <a href="#" rel="ambiance">Sfeer</a>
+                </div>
             </div>
         </section>
 
         <section class="bg-light gallery">
             <div class="row">
-                <div class="col-md-6 px-2 mt-3 kitchens">
-                    <div class="thumbnail gallery__gallery-item--hover">
-                        <a href="#">
-                            <figure>
-                                <img src="images/gallery/kitchen_1.jpg">
-                            </figure>
-                            <div class="gallery__variant-1 d-none d-md-block">
-                                <img src="images/gallery/price_tag.png">
-                                <div class="gallery__price-text">PRIJS:
-                                </div>
-                                <div class="gallery__price-value">&euro; 9.250,-
-                                </div>
+                <div class="col-md-6 px-2 thumbnail gallery__gallery-item--hover" data-category="kitchens">
+                    <a href="#">
+                        <figure>
+                            <img src="images/gallery/kitchen_1.jpg">
+                        </figure>
+                        <div class="gallery__variant-1 d-none d-md-block">
+                            <img src="images/gallery/price_tag.png">
+                            <div class="gallery__price-text">PRIJS:
                             </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 px-2 mt-3 ambiance">
-                    <div class="thumbnail gallery__gallery-item--hover">
-                        <a href="#">
-                            <figure>
-                                <img src="images/gallery/people_1.jpg">
-                            </figure>
-                            <div class="gallery__variant-2 d-none d-md-block">
-                                <p>
-                                    litora torquent per conubia
-                                    <span class="font-weight--900">posuere</span>
-                                    <span class="font-weight--900">tincidunt</span>
-                                </p>
+                            <div class="gallery__price-value">&euro; 9.250,-
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-6 px-2 mt-3 kitchens">
-                    <div class="thumbnail gallery__gallery-item--hover">
-                        <a href="#">
-                            <figure>
-                                <img src="images/gallery/kitchen_2.jpg">
-                            </figure>
-                        </a>
-                    </div>
+
+                <div class="col-md-6 px-2 thumbnail gallery__gallery-item--hover" data-category="ambiance">
+                    <a href="#">
+                        <figure>
+                            <img src="images/gallery/people_1.jpg">
+                        </figure>
+                        <div class="gallery__variant-2 d-none d-md-block">
+                            <p>
+                                litora torquent per conubia
+                                <span class="font-weight--900">posuere</span>
+                                <span class="font-weight--900">tincidunt</span>
+                            </p>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-6 px-2 mt-3 kitchens">
-                    <div class="thumbnail gallery__gallery-item--hover">
-                        <a href="#">
-                            <figure>
-                                <img src="images/gallery/kitchen_3.jpg">
-                            </figure>
-                        </a>
-                    </div>
+
+                <div class="col-md-6 px-2 thumbnail gallery__gallery-item--hover" data-category="kitchens">
+                    <a href="#">
+                        <figure>
+                            <img src="images/gallery/kitchen_2.jpg">
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-md-6 px-2 thumbnail gallery__gallery-item--hover" data-category="kitchens">
+                    <a href="#">
+                        <figure>
+                            <img src="images/gallery/kitchen_3.jpg">
+                        </figure>
+                    </a>
                 </div>
             </div>
         </section>
+
         <footer>
-            © 2018 - MaxServ is niet aansprakelijk voor (gevolg)schade die voortkomt uit het gebruik van deze site, dan wel uit fouten
-            of ontbrekende functionaliteiten op deze site.
+            <div id="logo-small">
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12">
+                    Taxandriaweg 11
+                </div>
+                <div class="col-12">
+                    5142 PA Waalwijk
+                </div>
+                <div class="col-12">
+                    0416 30 10 00
+                </div>
+                <div class="col-12">
+                    <a href="mailto:info@maxserv.com">info@maxserv.com</a>
+                </div>
+            </div>
+
+            <div id="disclaimer">
+                © 2018 - MaxServ is niet aansprakelijk voor (gevolg)schade die voortkomt uit het gebruik van deze site, dan wel uit fouten
+                of ontbrekende functionaliteiten op deze site.
+            </div>
         </footer>
     </div>
 </body>
